@@ -9,11 +9,13 @@ import java.util.Scanner;
  */
 public class EvenOrOdd {
 
-    public static void printNum(int number){
-        if(number%2==0){
+    public static void printEvenOrOdd(int number){
+        if(number%2 == 0)
+        {
             System.out.println("The Number is Even");
         }
-        else if(number%2!=0){
+        else 
+        {
            System.out.println("The Number is Odd"); 
         }
     }
@@ -21,12 +23,13 @@ public class EvenOrOdd {
      
     
     public static void main(String[] args) {
-        int n;
-        Scanner input=new Scanner(System.in);
-        n=input.nextInt();
-        printNum(n);
+        int number;
+        Scanner input = new Scanner(System.in);
+        number = input.nextInt();
+        printEvenOrOdd(number);
        
     }
     
     
 }
+
