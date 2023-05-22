@@ -1,6 +1,7 @@
+import java.util.Scanner;
 public class NumberPrimeOrNot {
 
-    public static void primeNumber(int number)
+    public static void isPrimeNumber(int number)
     {
 
         boolean check = true;
@@ -11,7 +12,7 @@ public class NumberPrimeOrNot {
                 check = false;
                 break;
         }
-        if (number == 0 || number == 0 || check == false)
+        if (number == 0 || check == false)
         {
             System.out.print("The Number is Not Prime ");
         }
@@ -27,7 +28,7 @@ public class NumberPrimeOrNot {
          int number;
         Scanner input = new Scanner(System.in);
         number = input.nextInt();
-        primeNumber(number);
+        isPrimeNumber(number);
 
     }
 }

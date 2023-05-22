@@ -1,10 +1,13 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class RemoveDuplicateElements {
 
-    public static void RemoveDuplicateElements(int arr1[], int size)
+    public static void removeDuplicateElements(int arr1[], int size)
     {
         int arr2[] = new int [size];
 
-        for(int i = 0; i < size; i++)
+        for(int i = 0; i < size-1; i++)
         {
             if(arr1[i] != arr1[i+1])
             {
@@ -29,7 +32,7 @@ public class RemoveDuplicateElements {
         }
         Arrays.sort(arr);
 
-        RemoveDuplicateElements( arr, size);
+        removeDuplicateElements( arr, size);
 
 
     }

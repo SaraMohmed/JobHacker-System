@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class PrintFibonacciSeries {
 
     public static int fibonacci (int number)
@@ -18,6 +19,7 @@ public class PrintFibonacciSeries {
          int number;
          Scanner input = new Scanner(System.in);
          number = input.nextInt();
-         fibonacci (number);
+        int numberFibonacci = fibonacci (number);
+         System.out.print(numberFibonacci);
      }
 }
