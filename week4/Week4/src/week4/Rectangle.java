@@ -1,3 +1,5 @@
+package week4;
+
 public class Rectangle {
 
     public Rectangle(double width, double height) {
@@ -5,8 +7,8 @@ public class Rectangle {
         this.height = height;
     }
 
-    double width = 1;
-    double height = 1;
+   public  double width = 1;
+    public  double height = 1;
 
     public void setWidth(double width) {
         this.width = width;
@@ -24,11 +26,15 @@ public class Rectangle {
     }
 
     public double getArea(){
-        return width * height;
+
+        double Area = width * height;
+        return Area;
     }
 
     public double getPerimeter(){
-        return width + height;
+
+        double Perimeter = 2 * (width + height);
+        return Perimeter;
     }
 
 }
